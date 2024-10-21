@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Bernadya Kernel by Hoshi
+kernel.string=Nightmare x Begonia Kernel by Hoshi
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=vince
-device.name2=vince
+device.name1=begonia
+device.name2=begonia
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -50,7 +50,7 @@ if isTimRom; then
 
     ui_print " » Custom ROM recognition: Tim's Signature ";
     ui_print " » Initiating vibration fix deployment "
-    ui_print " » Executing Bernadya Flasher...";
+    ui_print " » Create a Nightmare on Your Device...";
 
     split_boot;
     patch_cmdline initcall_blacklist initcall_blacklist=
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Executing Bernadya Flasher....";
+    ui_print " » Creating a Nightmare on Your Device ....";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Executing Bernadya Flasher....";
+    ui_print " » This Would Be A Nightmare....";
 
     dump_boot;
     write_boot;
